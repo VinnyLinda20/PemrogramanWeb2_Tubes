@@ -27,4 +27,10 @@ Route::get('/karyawan', function () {
 });
 
 Route::get('/karyawan', 'KaryawanController@index');
+Route::get('/karyawan/create', 'KaryawanController@create');
+Route::post('/karyawan/store', 'KaryawanController@store');
+Route::delete('/karyawan/{id}/delete', 'KaryawanController@destroy');
+Route::post('/karyawan/{id}/edit', 'KaryawanController@update');
+Route::get('/karyawan/edit/{id}', 'KaryawanController@edit');
+
 Route::resource('/jabatan', 'JabatanController');

@@ -14,7 +14,7 @@
             </div><br />
         @endif
 
-        <form method="post" action="/karyawan">
+        <form method="post" action="/karyawan/store">
             @csrf
             <div class="form-group">
                 <label for="nip"> NIP </label>
@@ -38,7 +38,12 @@
             </div>
             <div class="form-group">
                 <label for="status_kerja"> Status Kerja </label>
-                <input type="text" class="form-control" name="status_kerja">
+                <select name="status_kerja" id="status_kerja" class="form-control">
+                <option value=>-Pilih Status Kerja-</option>
+                <option value="Karyawan Tetap">Karyawan Tetap</option>
+                <option value="Karyawan Kontrak">Karyawan Kontrak</option>
+                <option value="Karyawan Training">Karyawan Training</option>
+                </select>
             </div>
             <button type="submit" class="btn btn-primary"> Simpan </button>
         </form>
