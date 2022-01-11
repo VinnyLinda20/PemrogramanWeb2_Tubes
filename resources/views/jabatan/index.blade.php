@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 <?php $no = 1; ?>
 @section('content')
