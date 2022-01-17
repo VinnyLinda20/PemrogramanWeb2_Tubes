@@ -2,7 +2,8 @@
 
 <?php $no = 1; ?>
 @section('content')
-    <h3>Data Jabatan</h3>
+    <center><h3>Data Jabatan</h3></center>
+    <br>
     <a href="/jabatan/create" class="btn btn-success"> Tambah Data</a>
     <div class="col-sm-12">
 
@@ -12,12 +13,12 @@
             </div>
         @endif
     </div>
-
-
-    <table class="table table-striped mt-3">
+    <br>
+    <div class="table-responsive table--no-card m-b-40">
+    <table class="table table-borderless table-striped table-earning">
         <thead>
             <tr>
-               
+                <th> No </th>
                 <th> ID </th>
                 <th> Jabatan </th>
                 <th colspan=2></th>
@@ -27,7 +28,7 @@
             @foreach ($jabatans as $jabatan)
                 <tr>
                     <td> {{ $no++ }}</td>
-                
+                    <td> {{ $jabatan->id }}</td>
                     <td> {{ $jabatan->nama_jabatan }}</td>
                     <td>
                         <a href="/jabatan/{{ $jabatan->id }}/edit/" class="btn btn-primary"> Edit</a>
@@ -43,5 +44,6 @@
             @endforeach
         </tbody>
     </table>
+</div>
 @endsection
            

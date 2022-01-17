@@ -8,9 +8,9 @@
     <meta name="description" content="au theme template">
     <meta name="author" content="Hau Nguyen">
     <meta name="keywords" content="au theme template">
-
+    <link rel="icon" href="images/icon/aa.png" type="image/ico" />
     <!-- Title Page-->
-    <title>Aplikasi Manajemen Karyawan</title>
+    <title>Manajemen Karyawan</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -42,8 +42,8 @@
             <div class="header-mobile__bar">
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
-                        <a class="logo" href="index.html">
-                            <img src="" alt="Aplikasi Manajemen Karyawan" />
+                        <a class="logo" href="/home">
+                            <img src="" alt="Manajemen Karyawan" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -56,68 +56,23 @@
             <nav class="navbar-mobile">
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
-                        <li class="has-sub">
+                        <li>
                             <a class="js-arrow" href="#">
                             <a href="/home">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
-                                <li>
-                                    <a href="/home">Dashboard 1</a>
-                                </li>
-                            </ul>
                         </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-copy"></i>Pages</a>
-                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
-                                <li>
-                                    <a href="login.html">Login</a>
-                                </li>
-                                <li>
-                                    <a href="register.html">Register</a>
-                                </li>
-                                <li>
-                                    <a href="forget-pass.html">Forget Password</a>
-                                </li>
-                            </ul>
+                        <li>
+                            <a href="/karyawan">
+                                <i class="fas fa-desktop"></i>Data Karyawan</a>
                         </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-desktop"></i>UI Elements</a>
-                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
-                                <li>
-                                    <a href="button.html">Button</a>
-                                </li>
-                                <li>
-                                    <a href="badge.html">Badges</a>
-                                </li>
-                                <li>
-                                    <a href="tab.html">Tabs</a>
-                                </li>
-                                <li>
-                                    <a href="card.html">Cards</a>
-                                </li>
-                                <li>
-                                    <a href="alert.html">Alerts</a>
-                                </li>
-                                <li>
-                                    <a href="progress-bar.html">Progress Bars</a>
-                                </li>
-                                <li>
-                                    <a href="modal.html">Modals</a>
-                                </li>
-                                <li>
-                                    <a href="switch.html">Switchs</a>
-                                </li>
-                                <li>
-                                    <a href="grid.html">Grids</a>
-                                </li>
-                                <li>
-                                    <a href="fontawesome.html">Fontawesome Icon</a>
-                                </li>
-                                <li>
-                                    <a href="typo.html">Typography</a>
-                                </li>
+                        <li>
+                            <a href="/jabatan">
+                                <i class="fas fa-desktop"></i>Data Jabatan</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="zmdi zmdi-power"></i>Logout</a>
+                        </li>
                             </ul>
                         </li>
                     </ul>
@@ -125,27 +80,21 @@
             </nav>
         </header>
         <!-- END HEADER MOBILE-->
+        
 
         <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
-                <a href="#">
-                    <img src="" alt="Aplikasi Manajemen Karyawan" />
-                </a>
+                <center>
+                <a href="#"  class="-2x" style="color:#000;" ><span><font size="4.95" color="black" face="Helvetica Neue">APLIKASI MANAJEMEN KARYAWAN</font></span></a>
+                </center>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
-                        <li class="active has-sub">
-                            <a class="js-arrow" href="#">
+                        <li>
                             <a href="/home">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="/home">
-                                    <i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                                </li>
-                            </ul>
                         </li>
                         <li>
                             <a href="/karyawan">
@@ -176,7 +125,7 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu ">
                                         <div class="image">
-                                            <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                            <img src="images/icon/user.png" alt="user" />
                                         </div>
                                         <div class="content">
                                             <a class="js-acc-btn" href="#">Vinny</a>
@@ -185,7 +134,7 @@
                                             <div class="info clearfix">
                                                 <div class="image">
                                                     <a href="#">
-                                                        <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                                        <img src="images/icon/user.png" alt="user" />
                                                     </a>
                                                 </div>
                                                 <div class="content">
@@ -226,6 +175,14 @@
     
                     </div>
             <!-- END MAIN CONTENT-->
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <p>Copyright © 2022 Aplikasi Manajemen Karyawan : Vinny Lindawaty</p>
+                    </div>
+                </div>
+            </div>
             <!-- END PAGE CONTAINER-->
              </div>
         </div>
@@ -253,17 +210,6 @@
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
-
-    
-    <div class="row">
-        <div class="col-md-12">
-            <div class="copyright">
-                <p>Copyright © 2022 Aplikasi Manajemen Karyawan : Vinny Lindawaty</p>
-            </div>
-        </div>
-    </div>
-
-</body>
 
 </html>
 <!-- end document-->

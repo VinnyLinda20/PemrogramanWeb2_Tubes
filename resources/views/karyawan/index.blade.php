@@ -1,20 +1,21 @@
 @extends('layouts.admin')
 
-
 <?php $no = 1; ?>
 @section('content')
-    <h3>Data Karyawan</h3>
-        <a href="/karyawan/create" class="btn btn-success">Tambah Data</a>
-        <div class="col-sm-12">
+    <center><h3>Data Karyawan</h3></center>
+    <br>
+    <a href="/karyawan/create" class="btn btn-success">Tambah Data</a> 
+    <div class="col-sm-12">
         
         @if(session()->get('success'))
-        <div class="alert alert-success">
-            {{ session()->get('success') }}
-        </div>
+            <div class="alert alert-success">
+                {{ session()->get('success') }}
+            </div>
         @endif
-        </div>
-
-    <table class="table table-striped mt-3">
+    </div>
+    <br>
+    <div class="table-responsive table--no-card m-b-40">
+    <table class="table table-border table-striped table-earning">
         <thead>
             <tr>
                 <th> No </th>
@@ -23,7 +24,7 @@
                 <th> Alamat</th>
                 <th> No Telepon </th>
                 <th> Jabatan </th>
-                <th> Status Kerja </th>
+                <th class="text-right">Status Kerja</th>
                 <th colspan=2></th>
             </tr>
         </thead>
@@ -36,7 +37,7 @@
                     <td> {{ $karyawan->alamat }}</td>
                     <td> {{ $karyawan->no_telepon }}</td>
                     <td> {{ $karyawan->jabatan }}</td>
-                    <td> {{ $karyawan->status_kerja }}</td>
+                    <td class="text-right"> {{ $karyawan->status_kerja }}</td>
                     <td>
                         <a href="/karyawan/{{ $karyawan->id }}/edit/" class="btn btn-primary">Edit</a>
                     </td>
@@ -51,4 +52,5 @@
             @endforeach
         </tbody>
     </table>
+</div>
 @endsection
