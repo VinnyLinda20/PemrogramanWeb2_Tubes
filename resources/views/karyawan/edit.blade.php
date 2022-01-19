@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="col-md-8 offset-md-2">
-        <h3> Edit Karyawan</h3>
+    <center><h3> Edit Karyawan</h3></center><br>
 
         @if ($errors->any())
             <div class="alert alert-danger">
@@ -40,7 +40,7 @@
             <div class="form-group">
                 <label for="status_kerja"> Status Kerja </label>
                 <input type="text" class="form-control" name="status_kerja" value="{{ $karyawan->status_kerja }}">
-            </div>
+            </div><br>
                 <button type="submit" class="btn btn-primary"> Simpan </button>
         </form>
     </div>

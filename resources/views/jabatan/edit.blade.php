@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="col-md-8 offset-md-2">
-        <h3> Edit Jabatan</h3>
+    <center><h3> Edit Jabatan</h3></center><br>
 
         @if ($errors->any())
             <div class="alert alert-danger">
@@ -23,7 +23,7 @@
             </div>
             <div class="form-group">
                 <label for="nama_jabatan"> Jabatan </label>
-                <input type="text" class="form-control" name="nama_jabatan" value="{{ $jabatan->nama_jabatan }}">
+                <input type="text" class="form-control" name="nama_jabatan" value="{{ $jabatan->nama_jabatan }}"><br>
                 <button type="submit" class="btn btn-primary"> Simpan </button>
         </form>
     </div>

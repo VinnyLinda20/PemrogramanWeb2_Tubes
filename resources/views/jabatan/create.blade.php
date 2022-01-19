@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="col-md-8 offset-md-2">
-        <h3> Tambah Jabatan</h3>
+    <center><h3> Tambah Jabatan</h3></center><br>
 
         @if ($errors->any())
             <div class="alert alert-danger">
