@@ -16,8 +16,10 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view('login');
+    return view('pengguna.login');
 });
+
+Route::post('/postlogin', 'LoginController@postlogin')->name('postlogin');
 
 Route::get('/register', function () {
     return view('register');
