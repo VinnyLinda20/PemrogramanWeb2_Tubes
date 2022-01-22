@@ -15,7 +15,7 @@
                                                 <i class="zmdi zmdi-account-o"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>10368</h2>
+                                                <h2>{{$tetap->count()}}</h2>
                                                 <span>Karyawan Tetap</span>
                                             </div>
                                         </div>
@@ -30,7 +30,8 @@
                                                 <i class="zmdi zmdi-account-o"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>388,688</h2>
+                                                
+                                                <h2>{{$kontrak->count()}}</h2>
                                                 <span>Karyawan Kontrak</span>
                                             </div>
                                         </div>
@@ -45,7 +46,7 @@
                                                 <i class="zmdi zmdi-account-o"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>1,086</h2>
+                                                <h2>{{$training->count()}}</h2>
                                                 <span>Karyawan Training</span>
                                             </div>
                                         </div>

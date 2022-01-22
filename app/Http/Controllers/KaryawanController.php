@@ -6,17 +6,19 @@ use App\Karyawan;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreKaryawanRequest;
 use App\Http\Requests\UpdateKaryawanRequest;
+use App\Jabatan;
 
 class KaryawanController extends Controller
 {
     public function index(){
-        $karyawan = Karyawan::all();
+        $karyawan = Karyawan::with('Jabatan')->get();
 
         return view('karyawan.index', ['karyawans' => $karyawan]);
     }
 
     public function create(){
-        return view('karyawan.create');
+        $jabatan = jabatan::all();
+        return view('karyawan.create', compact("jabatan"));
     }
 
     public function store(Request $request)
@@ -44,8 +46,9 @@ class KaryawanController extends Controller
 
     public function edit($id)
     {
+        $jabatan = jabatan::all();
         $karyawan = Karyawan::find($id);
-        return view('karyawan.edit', compact('karyawan'));
+        return view('karyawan.edit', compact('karyawan','jabatan'));
     }
 
     public function update(Request $request, $id)

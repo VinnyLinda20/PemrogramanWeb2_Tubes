@@ -25,9 +25,7 @@ Route::get('/register', function () {
     return view('register');
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/home', 'HomeController@index');
 
 use App\Karyawan;
 Route::get('/karyawan', function () {
@@ -43,7 +41,7 @@ Route::get('/karyawan', 'KaryawanController@index');
 Route::get('/karyawan/create', 'KaryawanController@create');
 Route::post('/karyawan/store', 'KaryawanController@store');
 Route::delete('/karyawan/{id}/delete', 'KaryawanController@destroy');
-Route::post('/karyawan/{id}/edit', 'KaryawanController@update');
-Route::get('/karyawan/edit/{id}', 'KaryawanController@edit');
+Route::get('/karyawan/{id}/edit', 'KaryawanController@edit');
+Route::put('/karyawan/edit/{id}', 'KaryawanController@update');
 
 Route::resource('/jabatan', 'JabatanController');

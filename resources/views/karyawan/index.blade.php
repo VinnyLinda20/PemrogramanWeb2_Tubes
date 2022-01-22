@@ -21,6 +21,7 @@
             </button>
     </form>
     </div>
+
     <br>
     <div class="table-responsive table--no-card m-b-40">
     <table class="table table-border table-striped table-earning">
@@ -44,13 +45,13 @@
                     <td> {{ $karyawan->nama }}</td>
                     <td> {{ $karyawan->alamat }}</td>
                     <td> {{ $karyawan->no_telepon }}</td>
-                    <td> {{ $karyawan->jabatan }}</td>
+                    <td> {{ $karyawan->Jabatan->nama_jabatan }}</td>
                     <td class="text-right"> {{ $karyawan->status_kerja }}</td>
                     <td>
                         <a href="/karyawan/{{ $karyawan->id }}/edit/" class="btn btn-primary">Edit</a>
                     </td>
                     <td>
-                        <form action="/karyawan/{{$karyawan->id}}" method="post">
+                        <form action="/karyawan/{{$karyawan->id}}/delete" method="post">
                             @csrf
                             @method('DELETE')
                             <button class="btn btn-danger" type="submit">Delete</button>

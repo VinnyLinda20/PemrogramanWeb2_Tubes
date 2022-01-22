@@ -128,7 +128,7 @@
                                             <img src="{{asset('images/icon/user.png')}}"/>
                                         </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="#">Vinny</a>
+                                            <a class="js-acc-btn" href="#">{{Auth::User()->name}}</a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="info clearfix">
@@ -139,7 +139,7 @@
                                                 </div>
                                                 <div class="content">
                                                     <h5 class="name">
-                                                        <a href="#">Vinny</a>
+                                                        <a href="#">{{Auth::User()->name}}</a>
                                                     </h5>
                                                 </div>
                                             </div>

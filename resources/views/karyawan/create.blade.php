@@ -36,7 +36,9 @@
                 <label for="jabatan"> Jabatan </label>
                 <select name="jabatan" id="jabatan" class="form-control">
                 <option value=>-Pilih jabatan-</option>
-                <option value="Karyawan Tetap">Karyawan Tetap</option>
+                    @foreach ($jabatan as $jabat)
+                <option value="{{ $jabat->id}}">  {{ $jabat->nama_jabatan}} </option>
+                @endforeach
                 </select>
             </div>
             <div class="form-group">
